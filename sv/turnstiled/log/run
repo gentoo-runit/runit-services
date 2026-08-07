@@ -1,0 +1,3 @@
+#!/bin/sh
+mkdir -p /var/log/turnstiled
+exec svlogd -tt /var/log/turnstiled

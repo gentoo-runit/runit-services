@@ -1,0 +1,3 @@
+#!/bin/sh
+mkdir -p /var/log/udisks2
+exec svlogd -tt /var/log/udisks2

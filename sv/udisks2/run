@@ -1,0 +1,6 @@
+#!/bin/sh
+exec 2>&1
+# udisks2 is normally D-Bus activated on demand and doesn't need a
+# standalone service. This is only here for people who'd rather have
+# it always running; skip enabling it if you're fine with activation.
+exec /usr/lib/udisks2/udisksd --no-debug
